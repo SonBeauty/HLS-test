@@ -68,35 +68,50 @@ const App = () => {
       <h4 style={{ color: "#fff" }}>If you joke wrong away, you teeth have to pay, (Serious)</h4>
     </div>
     <div className='container'>
-      <div className='story'>
-        <span>{story.map(storye => { return storye.content })}</span>
-      </div>
-      <hr />
-      <div className='button'>
-        <Button
-          className='buttonDesign'
-          disabled={index === 8}
-          type='primary'
-          style={{ marginRight: '10px' }}
-          size='large'
-          onClick={() => {
-            updateStory(index, "this is Funny"); fetchStory(index);
-          }}>
-          This is Funny!
-        </Button>
-        <Button
-          className='buttonDesign'
-          disabled={index === 8}
-          type='success'
-          style={{ marginLeft: '10px' }}
-          size='large'
-          onClick={() => {
-            updateStory(index, "this is not Funny"); fetchStory(index);
-          }}>
-          This is not Funny.
-        </Button>
+      <div className='storyDiv'>
+        <div className='story'>
+          <span>{story.map(storye => { return storye.content })}</span>
+        </div>
+        <hr />
+        <div className='button'>
+          <Button
+            className='buttonDesign'
+            disabled={index === 8}
+            type='primary'
+            style={{ marginRight: '10px' }}
+            size='large'
+            onClick={() => {
+              updateStory(index, "this is Funny"); fetchStory(index);
+            }}>
+            This is Funny!
+          </Button>
+          <Button
+            className='buttonDesign'
+            disabled={index === 8}
+            type='success'
+            style={{ marginLeft: '10px' }}
+            size='large'
+            onClick={() => {
+              updateStory(index, "this is not Funny"); fetchStory(index);
+            }}>
+            This is not Funny.
+          </Button>
+        </div>
       </div>
     </div>
+    <hr />
+    <div className='footer'>
+      <div className='aboutDiv'>
+        <span className='about'>
+          This website is created as part of Hlsolutions program. The materials contained on this website are provided for general
+          Information only and do not constitute any form of advice. HLS assumes no responsibility for the accuracy of any particular statement and
+          accepts no liability for any loss or damage which may arise from reliance on the information contained on this site
+        </span>
+        <div className='copyright'>Copyright 2021 HLS</div>
+      </div>
+      <hr />
+    </div>
+
   </>
   )
 }

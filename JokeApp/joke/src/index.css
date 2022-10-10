@@ -27,9 +27,28 @@ code {
 header{
   margin: auto;
   width: 70%;
+  display: flex;
+}
+.RightLogo{
+  margin-left: auto;
+  display: flex;
+}
+.info{
+  margin: auto;
+  text-align: right;
+}
+
+.employee{
+  font-size: 17px;
+  color: #b1b1b1;
+  font-weight: 500;
+  font-style:italic ;
+}
+
+.employeeName{
+  margin-top: -2.5px;
 }
 .logoRight{
-  float: right;
   width: 120px;
   height: 100px;
 }

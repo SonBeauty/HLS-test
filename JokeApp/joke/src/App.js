@@ -60,8 +60,18 @@ const App = () => {
   }
   return (<>
     <header>
-      <img src='logoH.jpg' alt='' />
-      <img className='logoRight' src='logoS.jpg' alt=''></img>
+      <div>
+        <img src='logoH.jpg' alt='' />
+      </div>
+      <div className='RightLogo'>
+        <div className='info'>
+          <span className='employee'>Handicrafted by</span>
+          <h3 className='employeeName'>Jim HLS</h3>
+        </div>
+        <div>
+          <img className='logoRight' src='logoRight.jpg' alt='' />
+        </div>
+      </div>
     </header>
     <div className='title'>
       <h1 style={{ color: "#fff" }}> A joke a day keeps the doctor away</h1>

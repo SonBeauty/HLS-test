@@ -73,8 +73,28 @@ const App = () => {
       </div>
       <hr />
       <div className='button'>
-        <Button name="" disabled={index === 8} type='warning' style={{ marginRight: '10px' }} size='large' onClick={() => { updateStory(index, "this is Funny"); fetchStory(index); }}>This is Funny!</Button>
-        <Button disabled={index === 8} type='primary' style={{ marginLeft: '10px' }} size='large' onClick={() => { updateStory(index, "this is not Funny"); fetchStory(index); }}>This is not Funny.</Button>
+        <Button
+          className='buttonDesign'
+          disabled={index === 8}
+          type='primary'
+          style={{ marginRight: '10px' }}
+          size='large'
+          onClick={() => {
+            updateStory(index, "this is Funny"); fetchStory(index);
+          }}>
+          This is Funny!
+        </Button>
+        <Button
+          className='buttonDesign'
+          disabled={index === 8}
+          type='success'
+          style={{ marginLeft: '10px' }}
+          size='large'
+          onClick={() => {
+            updateStory(index, "this is not Funny"); fetchStory(index);
+          }}>
+          This is not Funny.
+        </Button>
       </div>
     </div>
   </>

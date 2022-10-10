@@ -26,7 +26,7 @@ code {
 }
 header{
   margin: auto;
-  width: 80%;
+  width: 70%;
 }
 .logoRight{
   float: right;
@@ -40,7 +40,8 @@ header{
 }
 .story{
   height: 220px;
-  font-size: 16px;
+  font-size: 18px;
+  color: #000
 }
 .button{
   text-align: center;
@@ -50,6 +51,6 @@ button{
   margin: 10px;
 }
 
-.ant-btn-primary{
-  background-color: #29b363;
+.buttonDesign{
+  width: 200px;
 }

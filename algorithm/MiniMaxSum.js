@@ -15,8 +15,8 @@ const minMax = (arr) => {
     console.log(min + " " + max)
 }
 
-const arr = [20, 4,3,5,7]
-const arr1 = [2, 6,3,5,7]
+const arr = [20, 4, 3, 5, 7]
+const arr1 = [2, 6, 3, 5, 7]
 minMax(arr)
 minMax(arr1)
 
